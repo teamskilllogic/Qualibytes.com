@@ -60,7 +60,7 @@ const Navbar = () => {
             href="tel:+918377032324"
             className="px-3 py-1 bg-white text-black rounded hover:bg-gray-200 transition"
           >
-            Apply Now
+            📞Talk to us
           </a>
         </div>
 

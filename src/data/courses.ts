@@ -28,7 +28,7 @@ export const courses: Course[] = [
     description: "Master DevOps practices and tools with hands-on AWS infrastructure automation. Build CI/CD pipelines and deploy scalable applications.",
     image: "/placeholder.svg",
     price: "25000 INR",
-    instructor: "Sanjeev Singh",
+    instructor: "Satyam Srivastava",
     curriculum: [
       { week: 1, topics: ["Introduction to DevOps", "Git & GitHub Fundamentals"] },
       { week: 2, topics: ["Jenkins Configuration", "CI/CD Pipelines"] },
@@ -52,7 +52,7 @@ export const courses: Course[] = [
   {
     id: "machine-learning",
     title: "Machine Learning Engineering",
-    duration: "16 Weeks",
+    duration: "12 Weeks",
     description: "Become a Machine Learning expert through hands-on projects with Python, TensorFlow, and PyTorch. Deploy ML models to production.",
     image: "/placeholder.svg",
     price: "25000 INR",
@@ -84,7 +84,7 @@ export const courses: Course[] = [
   {
     id: "web-development",
     title: "Full Stack Web Development",
-    duration: "14 Weeks",
+    duration: "10 Weeks",
     description: "Learn frontend and backend development using modern JavaScript frameworks. Build responsive web applications with React and Node.js.",
     image: "/placeholder.svg",
     price: "20000 INR",

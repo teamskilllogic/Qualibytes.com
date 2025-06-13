@@ -1,12 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import TestimonialSlider from "../components/TestimonialSlider";
 
 const About = () => {
   return (
     <div className="min-h-screen pt bg-[#000000] qualibytes-background">
-    
-     {/* Hero Section */}
+      {/* Hero Section */}
       <section className="w-full bg-[#030307] pt-36 pb-12 px-6 text-center relative overflow-hidden mb-12">
         <div className="max-w-4xl mx-auto z-10 relative">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
@@ -59,16 +57,11 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-qualibytes-blue/30 to-qualibytes-purple/30 rounded-xl"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-12">
-                  <div className="text-4xl font-bold mb-4">5,000+</div>
-                  <div className="text-xl">Students Trained</div>
-                  <div className="my-8 border-t border-white/20"></div>
-                  <div className="text-4xl font-bold mb-4">90%</div>
-                  <div className="text-xl">Placement Rate</div>
-                </div>
-              </div>
+              <img
+                src="https://i.postimg.cc/90bYhFfh/QB.png"
+                alt="Qualibytes Training Impact"
+                className="object-cover w-full h-full rounded-xl"
+              />
             </motion.div>
           </div>
         </div>
@@ -130,136 +123,20 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             <TeamMember
-              name="Raj Sharma"
+              name="Akshit Giri"
               role="Founder & CEO"
-              bio="Former Google engineer with 15+ years of experience in software development and tech leadership."
+              bio="A seasoned Founder and CEO with over 10 years of experience in the IT industry. Successfully built and scaled two startups, both recognized for their innovation and impact in the technology sector.Successfully built and scaled two startups in the IT sector, known for innovation and impactful solutions. "
               index={0}
             />
             <TeamMember
-              name="Priya Patel"
-              role="Head of Curriculum"
-              bio="PhD in Computer Science with a passion for creating engaging learning experiences."
+              name="Satyam Srivastava"
+              role="Strategy & Operations Lead"
+              bio="A results-driven Strategy & Operations Lead with over 6 years of experience at the intersection of software engineering and business operations. Combines a strong technical foundation with strategic insight to optimize processes, drive cross-functional initiatives, and support scalable growth."
               index={1}
             />
-            <TeamMember
-              name="Alex Johnson"
-              role="Lead DevOps Instructor"
-              bio="AWS certified architect with extensive experience in cloud infrastructure and automation."
-              index={2}
-            />
-            <TeamMember
-              name="Sarah Chen"
-              role="AI & ML Specialist"
-              bio="Data scientist and researcher with expertise in machine learning and artificial intelligence."
-              index={3}
-            />
           </div>
-        </div>
-      </section>
-
-      {/* Our Tools */}
-      <section className="py-16 bg-black">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold mb-4">Tools & Technologies</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Our courses cover a wide range of industry-standard tools and
-              technologies to ensure you're job-ready.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {[
-              "AWS",
-              "Docker",
-              "Kubernetes",
-              "Python",
-              "React",
-              "Node.js",
-              "TensorFlow",
-              "Git",
-              "MongoDB",
-              "PostgreSQL",
-              "Jenkins",
-              "Terraform",
-            ].map((tool, index) => (
-              <motion.div
-                key={tool}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="bg-gray-900 border border-gray-800 rounded-lg p-4 flex items-center justify-center h-20"
-              >
-                <span className="font-medium text-center">{tool}</span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Student Success Stories Section */}
-      <section className="py-16 bg-gradient-to-b from-black to-qualibytes-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold mb-4">
-              Our Student Success Stories
-            </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Hear from our graduates who have successfully transitioned into
-              tech careers and achieved their professional goals with
-              Qualibytes.
-            </p>
-          </motion.div>
-
-          <TestimonialSlider />
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto bg-gradient-to-r from-qualibytes-blue/20 to-qualibytes-purple/20 backdrop-blur-sm rounded-xl p-8 md:p-12 border border-white/10 text-center"
-          >
-            <h2 className="text-3xl font-bold mb-4">Join Our Tech Community</h2>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Ready to start your journey in tech? Explore our courses and join
-              a community of like-minded learners and professionals.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href="/courses"
-                className="px-8 py-4 bg-qualibytes-blue hover:bg-blue-600 text-white font-medium rounded-md transition-colors"
-              >
-                Browse Courses
-              </a>
-              <a
-                href="/contact"
-                className="px-8 py-4 border border-qualibytes-purple text-white hover:bg-qualibytes-purple/10 rounded-md transition-colors"
-              >
-                Contact Us
-              </a>
-            </div>
-          </motion.div>
         </div>
       </section>
     </div>

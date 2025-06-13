@@ -10,7 +10,7 @@ import {
   BarChart4,
 } from "lucide-react";
 
-const programs = [
+export const programs = [
   {
     name: "DevOps",
     path: "devops",
@@ -142,7 +142,7 @@ const Programs = () => {
       <section className="w-full bg-[#030307] pt-36 pb-12 px-6 text-center relative overflow-hidden mb-12">
         <div className="max-w-4xl mx-auto z-10 relative">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-             Master Skills That <span className="text-gradient"> Matter</span>
+            Master Skills That <span className="text-gradient">Matter</span>
           </h1>
           <p className="text-blue-400 text-lg">Explore Our Programs</p>
         </div>

@@ -9,7 +9,6 @@ const HeroSection = () => {
 
       <div className="w-full px-4 md:px-8 py-16 md:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-          
           {/* 🎥 Left Side – Video & Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -24,7 +23,8 @@ const HeroSection = () => {
                 Not Just Training — Career Launchpad
               </p>
               <p className="text-gray-300">
-                Industry projects. Internship. Guaranteed guidance to get placed.
+                Industry projects. Internship. Guaranteed guidance to get
+                placed.
               </p>
             </header>
 
@@ -41,7 +41,7 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 className="px-8 py-4 bg-qualibytes-blue hover:bg-blue-600 text-white font-medium rounded-md transition-all"
               >
-                <Link to="/courses">Explore Courses</Link>
+                <Link to="/Programs">Explore Programs</Link>
               </motion.button>
 
               <motion.button
@@ -49,7 +49,7 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 className="px-8 py-4 border border-qualibytes-purple text-white hover:bg-qualibytes-purple/10 rounded-md transition-all"
               >
-                <Link to="/contact">Talk to an Advisor</Link>
+                <a href="tel:+918377032324">Talk to an Advisor</a>
               </motion.button>
             </div>
           </motion.div>
@@ -76,7 +76,7 @@ const HeroSection = () => {
 const panels = [
   {
     title: "DevOps Metrics",
-    to: "/courses/devops",
+    to: "/Programs/devops",
     content: (
       <>
         <div className="text-sm font-mono text-gray-400 mb-2">
@@ -94,7 +94,7 @@ const panels = [
   },
   {
     title: "AI/ML Dashboard",
-    to: "/courses/aiml",
+    to: "/Programs/aiml",
     content: (
       <>
         <div className="text-sm font-mono mb-1">Model Accuracy</div>
@@ -104,39 +104,47 @@ const panels = [
         </div>
         <div className="mt-4 text-sm font-mono">Predictions</div>
         <div className="bg-gray-800 p-2 rounded mt-1 text-xs font-mono text-left space-y-1">
-          <div><span className="text-purple-400">›</span> customer: likely to churn</div>
-          <div><span className="text-purple-400">›</span> click: 87% conversion</div>
+          <div>
+            <span className="text-purple-400">›</span> customer: likely to churn
+          </div>
+          <div>
+            <span className="text-purple-400">›</span> click: 87% conversion
+          </div>
         </div>
       </>
     ),
   },
   {
     title: "Full Stack Project",
-    to: "/courses/fullstack",
+    to: "/Programs/java-fullstack",
     content: (
       <div className="bg-[#1e1e1e] text-sm font-mono text-gray-100 p-4 rounded-xl leading-relaxed">
         <div className="text-gray-400 mb-1">App.tsx</div>
-        <code className="block text-green-400">const App = () =&gt; {'{'}</code>
+        <code className="block text-green-400">const App = () =&gt; {"{"}</code>
         <code className="block pl-4 text-blue-400">return (</code>
-        <code className="block pl-8 text-yellow-400">&lt;div className="app"&gt;</code>
+        <code className="block pl-8 text-yellow-400">
+          &lt;div className="app"&gt;
+        </code>
         <code className="block pl-12">&lt;Navbar /&gt;</code>
         <code className="block pl-12">&lt;HeroSection /&gt;</code>
         <code className="block pl-8 text-yellow-400">&lt;/div&gt;</code>
         <code className="block pl-4 text-blue-400">)</code>
-        <code className="block text-green-400">{'}'}</code>
+        <code className="block text-green-400">{"}"}</code>
       </div>
     ),
   },
   {
     title: "Testing Console",
-    to: "/courses/testing",
+    to: "/Programs/automation-testing",
     content: (
       <div className="bg-[#1a1a1a] text-sm font-mono text-gray-100 p-4 rounded-xl leading-relaxed">
         <div className="text-gray-400 mb-1">test_login.py</div>
         <code className="block text-blue-300">import pytest</code>
         <br />
         <code className="block text-green-300">def test_login():</code>
-        <code className="block pl-4 text-yellow-300">assert login("admin", "123") == True</code>
+        <code className="block pl-4 text-yellow-300">
+          assert login("admin", "123") == True
+        </code>
       </div>
     ),
   },

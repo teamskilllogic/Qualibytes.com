@@ -8,6 +8,14 @@ interface CourseCardProps {
   index: number;
 }
 
+// ✅ Mapping course IDs to correct route slugs
+const idToProgramPathMap: Record<string, string> = {
+  "devops": "devops",
+  "machine-learning": "aiml",
+  "web-development": "mern",
+  "cybersecurity": "cybersecurity", // fallback if needed
+};
+
 const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
   return (
     <motion.div
@@ -16,7 +24,10 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
-      <Link to={`/courses/${course.id}`} className="block group">
+      <Link
+        to={`/programs/${idToProgramPathMap[course.id] || course.id}`}
+        className="block group"
+      >
         <div className="bg-black rounded-xl overflow-hidden border border-gray-800 transition-all duration-300 group-hover:border-qualibytes-blue/50 group-hover:shadow-xl">
           
           {/* Image Section */}
@@ -27,7 +38,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-            
+
             {/* Category Badge */}
             <div className="absolute bottom-4 left-4 bg-qualibytes-blue text-white text-xs font-semibold px-3 py-1 rounded shadow">
               {course.category}
