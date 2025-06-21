@@ -131,7 +131,7 @@ const About = () => {
               index={0}
             />
             <TeamMember
-              name="Satyam Srivastava"
+              name="Snajay Gupta"
               role="Strategy & Operations Lead"
               bio="A results-driven Strategy & Operations Lead with over 6 years of experience at the intersection of software engineering and business operations. Combines a strong technical foundation with strategic insight to optimize processes, drive cross-functional initiatives, and support scalable growth."
               index={1}

@@ -15,16 +15,12 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <header className="space-y-4 mb-6">
+            <header className="space-y-4 mt-52 text-center">
               <h1 className="text-5xl md:text-6xl font-extrabold text-qualibytes-blue leading-tight">
                 Qualibytes
               </h1>
               <p className="text-lg md:text-xl font-medium">
                 Not Just Training — Career Launchpad
-              </p>
-              <p className="text-gray-300">
-                Industry projects. Internship. Guaranteed guidance to get
-                placed.
               </p>
             </header>
 
@@ -35,7 +31,7 @@ const HeroSection = () => {
               </video>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-6">
+            <div className="flex flex-col sm:flex-row gap-4 mt-60">
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 whileHover={{ scale: 1.05 }}
